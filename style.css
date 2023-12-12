@@ -1,0 +1,503 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #ffe8d6;
+    cursor: pointer;
+    display: none;
+}
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.nav-bar-menu {
+    float: right;
+}
+
+.nav-bar-links a {
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 10px;
+    right: 0;
+}
+
+.nav-bar-links a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s
+}
+
+.nav-bar-links a:hover::before {
+    width: 100%;
+}
+
+.nav-btns a {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding: 6px 15px;
+    border-radius: 50px;
+    background: #b56576;
+    color: #fff;
+    text-decoration: none !important;
+    border: 2px solid #b56576;
+}
+
+.nav-btns a:hover {
+    color: #ccc !important;
+}
+
+.hero {
+    background-image: linear-gradient(#eaac8b,#b56576);
+}
+.hero h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 30%;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    color: #fff;
+}
+
+.hero .container {
+    margin-top: 3%;
+    padding: 2rem;
+}
+
+.learnnow-btn {
+    background: transparent;
+    border: 2px solid #e7ad99;
+    color: #fff;
+    width: 140px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+
+.featured-img img {
+    width: 100%;
+    min-width: 350px;
+    margin-top: 20%;
+}
+
+.howitworks {
+    padding: 30px 0;
+    background: #efefef;
+}
+
+.howitworks h1 {
+    margin: 10px 0 40px 0;
+    color: #000;
+    font-weight: bold;
+}
+
+.level-section {
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 750ms;
+    will-change: transform;
+}
+
+.db-icons img {
+    width: 80%;
+    border-radius: 30px;
+    margin-bottom: 80px;
+}
+
+.level-section:hover,.level-section:focus {
+    transform: translateY(10px);
+}
+
+.dashboard-details {
+    padding: 10px 0 1px;
+    margin-bottom: 15px;
+}
+
+.dashboard-details h4 {
+    font-weight: bold;
+    font-family: "Poppins",sans-serif;
+}
+
+.dashboard-details p {
+    font-family: "Poppins", sans-serif;
+}
+
+.learning-hub {
+    padding: 140px 0 100px 0;
+    background-image: linear-gradient(#eaac8b,#b56576);
+}
+
+.learning-hub-section {
+    border-radius: 10px;
+    background-color: #ce796b;
+    box-shadow: 0 2px 40px 0 rgba(17, 39, 125, 0.18);
+}
+
+.learning-hub-description {
+    padding: 40px;
+}
+
+.learning-hub-description h2 {
+    color: #ffff;
+    margin-bottom: 35px;
+}
+
+.learning-hub-description p {
+    color: #fff;
+
+}
+
+.learning-hub-btn {
+    background: transparent;
+    border: 2px solid #e7ad99;
+    color: #fff;
+    width: 140px;
+    height: 40px;
+    margin-top: 54px;
+    margin-bottom: 14px;
+    border-radius: 50px;
+}
+
+.learning-hub-img {
+    text-align: center;
+}
+
+.learning-hub-img img {
+    width: 84%;
+    min-width: 350px;
+}
+
+#courses {
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+#courses h2 {
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.course {
+    width: 30%;
+    display: inline-block;
+    padding: 0 2rem;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+.course:hover {
+    transform: scale(1.05);
+}
+.course img {
+    width: 250px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+  }
+
+.course h3 {
+    margin-bottom: 1rem;
+  }
+
+.course p {
+    font-size: 14px;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right, #355070, #354f52);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+footer ul li a:hover {
+    color: #183a37 !important;
+}
+
+.row-footer {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2) {
+    margin-left: 50px;
+}
+
+.logo-footer {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.col .footer-description {
+    margin-right: 20px;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: bold;
+}
+
+.col .quick-links {
+    margin-left: 30px;
+}
+
+.contact-us p {
+    margin: 0;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .fa-regular {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fa-solid {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+
+    .primary-navbar li {
+        margin: 15px;
+    }
+
+    .col:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .level-section {
+        border: 3px solid #000;
+        border-radius: 10px;
+        padding: 20px 30px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgb(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~nav {
+        height: 17rem;
+    }
+
+    .primary-navbar li {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    .primary-navbar .nav-btns {
+        display: none;
+    }
+
+    .course {
+        width: 100%;
+        margin: 2rem 0;
+    }
+}
