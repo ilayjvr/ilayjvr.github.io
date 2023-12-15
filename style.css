@@ -7,11 +7,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    min-width: 400px;
-    max-width: 1600px;
-}
-
 nav {
     flex: 1;
     text-align: right;
