@@ -8,7 +8,8 @@
 }
 
 body {
-    min-width: 768px;
+    min-width: 400px;
+    max-width: 1600px;
 }
 
 nav {
@@ -455,7 +456,7 @@ hr {
     }
 }
 
-@media (max-width: 600px) {
+@media and only screen (max-width: 600px) {
     .icons {
         display: inline-flex;
     }
